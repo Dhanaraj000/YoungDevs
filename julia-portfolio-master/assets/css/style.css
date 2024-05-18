@@ -160,7 +160,7 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+
 
 .social-list {
   display: flex;
@@ -261,15 +261,6 @@ body.nav-active { overflow: hidden; }
   z-index: 4;
 }
 
-.header.active {
-  position: fixed;
-  animation: slideIn 0.5s ease forwards;
-}
-
-@keyframes slideIn {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(0); }
-}
 
 .header .container {
   display: flex;
@@ -494,11 +485,12 @@ body.nav-active { overflow: hidden; }
 .project-card .card-text { margin-block-end: 20px; }
 
 .project-card .btn-text {
-  display: flex;
+  display:flex;
   align-items: center;
   gap: 5px;
   font-weight: var(--fw-700);
   transition: var(--transition-1);
+  text-align: justify;
 }
 
 .project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
