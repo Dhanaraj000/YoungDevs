@@ -441,6 +441,13 @@ body.nav-active { overflow: hidden; }
   border-radius: var(--radius-pill);
   overflow: hidden;
 }
+.para{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-content: left;
+}
 
 .progress-fill { height: inherit; }
 
@@ -497,7 +504,7 @@ body.nav-active { overflow: hidden; }
 
 .card-text { 
   margin-block-end: 20px;
-  align-items: justify;
+  text-align: left;
   
 }
 
