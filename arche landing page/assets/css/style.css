@@ -291,16 +291,26 @@ body.nav-active { overflow: hidden; }
   visibility: hidden;
   transition: var(--transition-3);
 }
+.navbar-link{
+  padding: 0 20px;
+}
 
+.logo{
+  padding-left: 0%;
+}
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
+}
+.navbar-top img{
+  display: flex;
 }
 
 .navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-close-btn {
@@ -316,7 +326,10 @@ body.nav-active { overflow: hidden; }
 
 .nav-close-btn:is(:hover, :focus-visible) { background-color: var(--white_a12); }
 
-.navbar-list { margin-block-end: auto; }
+.navbar-list { 
+  margin-block-end: auto;
+  justify-content: space-between;
+ }
 
 .navbar-link {
   font-weight: var(--fw-700);
@@ -482,7 +495,11 @@ body.nav-active { overflow: hidden; }
 
 .project-card .card-title { margin-block: 16px; }
 
-.project-card .card-text { margin-block-end: 20px; }
+.card-text { 
+  margin-block-end: 20px;
+  align-items: justify;
+  
+}
 
 .project-card .btn-text {
   display:flex;
@@ -715,6 +732,7 @@ textarea.input-field {
     display: flex;
     gap: 36px;
     margin-inline: auto;
+    justify-content: space-between;
   }
 
   .navbar-link {
@@ -726,7 +744,7 @@ textarea.input-field {
 
   .navbar .social-link {
     color: var(--charcoal);
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .header {

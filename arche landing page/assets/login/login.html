@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <title>Arche-Login/SignUp</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1 id="arche" style="margin-top:30px; color:#d16b86;">Arche</h1>
+
+          <input class="s" type="text" placeholder="Name" id="name" />
+          <input class="s" type="email" placeholder="Email" id="mail" />
+          <input class="s" type="password" placeholder="Password" id="pass" />
+          <button class="p"  style="margin-top: 20px; cursor: pointer; color: white; background-color: #d16b86;" >Sign Up</button>
+          <br /><br /><br /><br />
+
+          <div class="social-container">
+            <a href="https:www.facebook.com" class="social" id="fb">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.gmail.com" class="social" id="gm">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social" id="tw">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1 style="margin: 60px;padding-top: 20px; font-family: Copperplate, Papyrus, fantasy; color: #d16b86;">Arche</h1>
+
+          <input style="margin-bottom: 20px;" type="email" placeholder="Email" id="mail" />
+          <input type="password" placeholder="Password" id="pass" />
+          <button class="login-button" style="cursor: pointer ; background-color: #d16b86; color: white;">Log In</button>
+          <br /><br /><br /><br /><br /><br />
+
+          <div class="social-container1">
+            <a href="https:www.facebook.com" class="social" id="fb">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.gmail.com" class="social" id="gm">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.twitter.com" class="social" id="tw">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 style="color: white;">"No Data is clean but most is Useful."</h1>
+      
+            <br />
+            <p style="color: white"  class="ss" >Already have an account?</p>
+            <button class="press" id="signIn" style="cursor: pointer;color: #d16b86; background-color: white;">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 style="color: white;">"No Data is clean but most is Useful."</h1>
+            <br />
+            <p style="color: white " class="pp">Don't have an account?</p>
+            <button class="press" id="signUp" style="cursor: pointer; color:#d16b86; background-color: white;">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+    </script>
+  </body>
+</html>
